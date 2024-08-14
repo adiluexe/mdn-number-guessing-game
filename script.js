@@ -57,13 +57,12 @@ function resetGame() {
     resetPara.textContent = "";
   }
 
+  resetButton.style = "none";
   guessField.disabled = false;
   guessSubmit.disabled = false;
   guessField.value = "";
   guessField.focus();
 
-  lastResult.style.backgroundColor = "white";
+  lastResult.style.display = "none";
   randomNumber = Math.floor(Math.random() * 100) + 1;
-
-  resetButton.style.display = "none";
 }
