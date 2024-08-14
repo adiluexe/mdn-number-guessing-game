@@ -91,7 +91,21 @@ body {
 }
 
 input,
-label {
+label,
+button {
   padding: 0.5rem 1rem;
   text-transform: capitalize;
+}
+
+.resultParas {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+}
+
+.resultParas > p {
+  padding: 1rem;
+}
+
+.resetButton {
+  display: none;
 }
