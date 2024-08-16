@@ -73,12 +73,25 @@ body {
   font-size: 3rem;
   font-family: "Red Hat Display", sans-serif;
   text-transform: capitalize;
+  transition: 0.5s;
+}
+
+.title:hover {
+  cursor: crosshair;
+  color: var(--accent);
+  font-size: 3.25rem;
+  letter-spacing: 0.25rem;
 }
 
 .description {
   width: 60%;
   padding: 2rem;
   font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.description:hover {
+  font-size: 1.6rem;
 }
 
 .form {
@@ -95,6 +108,28 @@ label,
 button {
   padding: 0.5rem 1rem;
   text-transform: capitalize;
+  transition: 0.5s;
+}
+
+label:hover {
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.guessSubmit,
+.resetButton {
+  background-color: var(--accent);
+  color: var(--light);
+  border: none;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: 0.5s;
+}
+
+.guessSubmit:hover,
+.resetButton:hover {
+  font-size: 1.5rem;
+  padding: 0.75rem 1rem;
 }
 
 .resultParas {
@@ -104,6 +139,11 @@ button {
 
 .resultParas > p {
   padding: 1rem;
+  transition: 0.5s;
+}
+
+.resultParas > p:hover {
+  font-size: 1.5rem;
 }
 
 .resetButton {
